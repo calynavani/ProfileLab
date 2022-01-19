@@ -1,0 +1,7 @@
+<form #formInput="ngForm" (ngSubmit)="updateProfile(formInput)">
+    <input type ="text" name="name" placeholder="Name" ngModel>
+    <input type ="text" name="bio" placeholder="Bio" ngModel>
+    <input type ="text" name="contactInfo" placeholder="Contact Info" ngModel>
+
+    <input type="submit" name="submit">
+</form>
