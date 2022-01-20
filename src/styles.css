@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*body rule */
+
+body{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:  rgb(143, 140, 140);;
+    
+}
+
+/*classes*/
+
+.centerElement{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.blackBorder{
+    border: 20px double rgb(143, 140, 140);
+    border-radius: 20px;
+}
+
+/*id tag*/
+
+#MainBody{
+    width: 37%;
+    padding: 12px;
+    background-color: #b3b7bb
+
+   
+}
+
+

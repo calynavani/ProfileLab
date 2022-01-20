@@ -1,0 +1,11 @@
+.button{
+    color:grey;
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px;
+    width: 500px;
+}
+.images{
+    height: auto;
+    width: 30%;
+}

@@ -1,7 +1,57 @@
-<form #formInput="ngForm" (ngSubmit)="updateProfile(formInput)">
+<h2>Edit User Profile</h2>
+
+<p>Name: </p>
+<input type="text" value="{{userToEdit.fName}}" id="Name" />
+<br/>
+
+<p>Contact:</p>
+<input type="email" value="{{userToEdit.contactInfo}}" id="ContactInfo" />
+
+<p>Bio:</p>
+<input type="text" value="{{userToEdit.bio}}" id="Bio" />
+<br/>
+<p>Avatar:</p>
+
+<div *ngFor="let avatar of avatars">
+    <input type="radio" name="Avatar" value="../../assets/images/{{avatar}}" class="imageSelection" />
+    <img src="../../assets/images/{{avatar}}" class="images" />
+
+</div>
+
+<!--
+<div>
+<img src="../../assets/images/dino.jpg" class="images"/>
+<input type="radio" value="../../assets/images/dino.jpg" id="Avatar1" name="Avatar" class="imageSelection"/>
+<br/>
+
+<img src="../../assets/images/emodog.gif" class="images"/>
+<input type="radio" value="../../assets/images/emodog.gif" id="Avatar2" name="Avatar" class="imageSelection"/>
+<br/>
+
+<img src="../../assets/images/eyes.png" class="images"/>
+<input type="radio" value="../../assets/images/eyes.png " id="Avatar3" name="Avatar" class="imageSelection"/>
+<br/>
+<img src="../../assets/images/frog.jpg" class="images"/>
+<input type="radio" value="../../assets/images/frog.jpg" id="Avatar4" name="Avatar" class="imageSelection"/>
+<br/>
+<img src="../../assets/images/girldog.jpg" class="images"/>
+<input type="radio" value="../../assets/images/girldog.jpg" id="Avatar5" name="Avatar" class="imageSelection" />
+<br/>
+<img src="../../assets/images/nerdog.webp" class="images"/>
+<input type="radio" value="../../assets/images/nerdog.webp" id="Avatar6" name="Avatar" class="imageSelection"/>
+<br/>
+<img src="../../assets/images/wolf.png" class="images"/>
+<input type="radio" value="../../assets/images/wolf.png" id="Avatar7" name="Avatar"class="imageSelection" />
+</div>
+<br/>
+-->
+<button class="button" (click)="UpdateUser()">Save Changes</button>
+
+
+<!--<form #formInput="ngForm" (ngSubmit)="updateProfile(formInput)">
     <input type ="text" name="name" placeholder="Name" ngModel>
     <input type ="text" name="bio" placeholder="Bio" ngModel>
     <input type ="text" name="contactInfo" placeholder="Contact Info" ngModel>
 
     <input type="submit" name="submit">
-</form>
+</form>-->
